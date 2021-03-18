@@ -26,10 +26,10 @@
 int er_init();
 
 /*
- * er_generate(int minimum, int maximum)
- * Returns a random number in the range provided. If not initialized, has no return value.
+ * er_generate(int min, int max)
+ * Returns a random number in the range provided. If not initialized, returns -1.
  */
-int er_generate(int minimum, int maximum);
+int er_generate(int min, int max);
 
 #endif // EASY_RNG_H
 
@@ -48,11 +48,11 @@ int er_init()
 	return 1;
 }
 
-int er_generate(int minimum, int maximum)
+int er_generate(int min, int max)
 {
 	if (er_initialized == 0)
 	{
-		return;
+		return -1;
 	}
 	int the_number = (rand() % (max - min + 1)) + min;
 	return the_number;

@@ -11,5 +11,5 @@ def generate(length = 8):
 	SYMBOLS = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890"
 	final = ""
 	for i in range(length):
-		final += SYMBOLS[random.randint(0, SYMBOLS.length() - 1)]
+		final += SYMBOLS[random.randint(0, len(SYMBOLS) - 1)]
 	return final

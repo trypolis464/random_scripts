@@ -9,5 +9,6 @@ I tend to write small scripts that are certainly useful, but don't really deserv
 ## List of scripts.
 * Python
 	* token_generator: generates random strings from a set list of characters.
+	* grammar: contains grammar related functions.
 * C
 	* easy_rng: simplifies sudo random number generation in C.

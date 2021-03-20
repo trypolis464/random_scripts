@@ -9,12 +9,10 @@
 #include "easy_rng.h"
 #include <stdio.h>
 
-int main()
-{
-	er_init();
-	for (int i = 0; i < 10; i++)
-	{
-		printf("%d\n", er_generate(1, 25));
-	}
-	return 0;
+int main() {
+    er_init();
+    for (int i = 0; i < 10; i++) {
+        printf("%d\n", er_generate(1, 25));
+    }
+    return 0;
 }

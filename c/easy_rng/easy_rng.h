@@ -37,25 +37,21 @@ int er_generate(int min, int max);
 
 int er_initialized = 0;
 
-int er_init()
-{
-	if (er_initialized == 1)
-	{
-		return 0;
-	}
-	srand(time(NULL));
-	er_initialized = 1;
-	return 1;
+int er_init() {
+    if (er_initialized == 1) {
+        return 0;
+    }
+    srand(time(NULL));
+    er_initialized = 1;
+    return 1;
 }
 
-int er_generate(int min, int max)
-{
-	if (er_initialized == 0)
-	{
-		return -1;
-	}
-	int the_number = (rand() % (max - min + 1)) + min;
-	return the_number;
+int er_generate(int min, int max) {
+    if (er_initialized == 0) {
+        return -1;
+    }
+    int the_number = (rand() % (max - min + 1)) + min;
+    return the_number;
 }
 
 #endif // ER_IMPLEMENTATION

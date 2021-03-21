@@ -6,9 +6,10 @@
  * MIT License.
  * 
  * Usage:
+ * This is a header-only library, contained all in one file. To use it, do the following in 1 .c file:
  * #define ER_IMPLEMENTATION
  * #include "easy_rng.h"
- * Then you can use the functions.
+ * Then you can #include the header in any other part of the program.
  */
 
 #ifndef EASY_RNG_H
@@ -33,6 +34,8 @@ int er_generate(int min, int max);
 
 #endif // EASY_RNG_H
 
+// Implenentation.
+
 #ifdef ER_IMPLEMENTATION
 
 int er_initialized = 0;
@@ -40,18 +43,20 @@ int er_initialized = 0;
 int er_init() {
     if (er_initialized == 1) {
         return 0;
+    } else {
+        srand(time(NULL));
+        er_initialized = 1;
+        return 1;
     }
-    srand(time(NULL));
-    er_initialized = 1;
-    return 1;
 }
 
 int er_generate(int min, int max) {
     if (er_initialized == 0) {
         return -1;
+    } else {
+        int the_number = (rand() % (max - min + 1)) + min;
+        return the_number;
     }
-    int the_number = (rand() % (max - min + 1)) + min;
-    return the_number;
 }
 
 #endif // ER_IMPLEMENTATION

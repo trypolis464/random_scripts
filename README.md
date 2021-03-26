@@ -8,7 +8,9 @@ I tend to write small scripts that are certainly useful, but don't really deserv
 
 ## List of scripts.
 * Python
-	* token_generator: generates random strings from a set list of characters.
-	* grammar: contains grammar related functions.
+	* token_generator: Generates random strings from a set list of characters.
+	* grammar: Contains grammar related functions.
 * C
-	* easy_rng: simplifies sudo random number generation in C.
+	* easy_rng: Simplifies sudo random number generation in C.
+* C++
+	* clipcopy: Simple CLI tool to copy a string of text to the Windows clipboard.

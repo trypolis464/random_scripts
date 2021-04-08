@@ -14,3 +14,4 @@ I tend to write small scripts that are certainly useful, but don't really deserv
 	* easy_rng: Simplifies sudo random number generation in C.
 * C++
 	* clipcopy: Simple CLI tool to copy a string of text to the Windows clipboard.
+	* pwgen: Simple command line tool to generate passwords.

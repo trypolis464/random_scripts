@@ -1,6 +1,6 @@
 /*
- * Clipcopy.
- * Simple CLI tool to copy a string of text to the Windows clipboard.
+ * pwgen.
+ * A CLI tool to generate passwords.
  * 
  * Copyright (C) 2021, Ty Gillespie. All rights reserved.
  * MIT License.

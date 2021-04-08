@@ -15,3 +15,5 @@ I tend to write small scripts that are certainly useful, but don't really deserv
 * C++
 	* clipcopy: Simple CLI tool to copy a string of text to the Windows clipboard.
 	* pwgen: Simple command line tool to generate passwords.
+* JS
+	* Cart: Simple JavaScript shoppingcart. Initial code from: https://github.com/munissor/tiny-cart.
